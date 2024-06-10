@@ -1,0 +1,87 @@
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/drivers/chromedriver/linux64/125.0.6422.141/chromedriver-linux64/chromedriver] found in cache
+INFO     http.client:base_api.py:18 Making POST request to URL: http://localhost:4001/users/signup
+INFO     http.client:base_api.py:24 Request JSON Body:
+{
+    "username": "johnstonrichard",
+    "password": "N#28O6ouUF",
+    "email": "patriciafarmer@example.net",
+    "firstName": "Joshua",
+    "lastName": "Shelton",
+    "roles": [
+        "ROLE_ADMIN",
+        "ROLE_CLIENT"
+    ]
+}
+INFO     http.client:base_api.py:35 Response Headers:
+{
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 10 Jun 2024 08:11:47 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+}
+INFO     http.client:base_api.py:39 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huc3RvbnJpY2hhcmQiLCJhdXRoIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn0seyJhdXRob3JpdHkiOiJST0xFX0NMSUVOVCJ9XSwiaWF0IjoxNzE4MDA3MTA4LCJleHAiOjE3MTgwMDc0MDh9.lP8xOhwBTEU8JtP9kN9aROhOL6HCXc0Zm0iYFXttahg"
+}
+INFO     http.client:base_api.py:18 Making POST request to URL: http://localhost:4001/users/signin
+INFO     http.client:base_api.py:24 Request JSON Body:
+{
+    "username": "johnstonrichard",
+    "password": "N#28O6ouUF"
+}
+INFO     http.client:base_api.py:35 Response Headers:
+{
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 10 Jun 2024 08:11:48 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+}
+INFO     http.client:base_api.py:39 Response Body:
+{
+    "username": "johnstonrichard",
+    "roles": [
+        "ROLE_ADMIN",
+        "ROLE_CLIENT"
+    ],
+    "firstName": "Joshua",
+    "lastName": "Shelton",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huc3RvbnJpY2hhcmQiLCJhdXRoIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn0seyJhdXRob3JpdHkiOiJST0xFX0NMSUVOVCJ9XSwiaWF0IjoxNzE4MDA3MTA4LCJleHAiOjE3MTgwMDc0MDh9.lP8xOhwBTEU8JtP9kN9aROhOL6HCXc0Zm0iYFXttahg",
+    "email": "patriciafarmer@example.net"
+}
+INFO     http.client:base_api.py:18 Making DELETE request to URL: http://localhost:4001/users/johnstonrichard
+INFO     http.client:base_api.py:20 Request Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huc3RvbnJpY2hhcmQiLCJhdXRoIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn0seyJhdXRob3JpdHkiOiJST0xFX0NMSUVOVCJ9XSwiaWF0IjoxNzE4MDA3MTA4LCJleHAiOjE3MTgwMDc0MDh9.lP8xOhwBTEU8JtP9kN9aROhOL6HCXc0Zm0iYFXttahg"
+}
+INFO     http.client:base_api.py:35 Response Headers:
+{
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Mon, 10 Jun 2024 08:11:48 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+}
