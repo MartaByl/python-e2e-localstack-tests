@@ -14,7 +14,7 @@ def test_successful_email_sending(logged_in_test):
     sent_page = email_page.attempt_email(subject, message, EmailPage)
     sent_page.get_alert().verify_alert_success("Email was scheduled to be send")
 
-    response = requests.get(f"http://localhost:8025/api/v2/search?kind=to&query={user.email}&limit=1")
+    response = requests.get(f"{os.getenv('MAILHOG_URL')}/api/v2/search?kind=to&query={user.email}&limit=1")
     data = response.json()
     assert data["items"][0]["Content"]["Headers"]["Subject"][0] == subject
     assert data["items"][0]["Content"]["Body"] == message
